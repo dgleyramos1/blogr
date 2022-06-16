@@ -21,9 +21,9 @@ let connect = document.getElementById("connect");
 
 menu.addEventListener('click', (e) => {
   if(menu_bar.src.includes("src/img/icon-hamburger.svg")){
-    menu_bar.src = "../../src/img/icon-close.svg";
+    menu_bar.src = "./src/img/icon-close.svg";
   }else{
-    menu_bar.src = "../../src/img/icon-hamburger.svg"
+    menu_bar.src = "./src/img/icon-hamburger.svg"
   }
   navbar.classList.toggle("open")
 })
