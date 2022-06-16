@@ -63,13 +63,18 @@ dropdown_connect.addEventListener('click', (e) =>  {
   }
 });
 
-if (min_width.matches) {
-  connect_arrow.src = "./../../src/img/icon-arrow-light.svg";
-  product_arrow.src = "./../../src/img/icon-arrow-light.svg";
-  company_arrow.src = "./../../src/img/icon-arrow-light.svg";
-} else {
-  connect_arrow.src = "./../../src/img/icon-arrow-dark.svg";
-  product_arrow.src = "./../../src/img/icon-arrow-dark.svg";
-  company_arrow.src = "./../../src/img/icon-arrow-dark.svg";
-}
+
+
+window.addEventListener('resize',() =>{
+
+  if (window.innerWidth >= 768 ) {
+    connect_arrow.src = "./../../src/img/icon-arrow-light.svg";
+    product_arrow.src = "./../../src/img/icon-arrow-light.svg";
+    company_arrow.src = "./../../src/img/icon-arrow-light.svg";
+  } else {
+    connect_arrow.src = "./../../src/img/icon-arrow-dark.svg";
+    product_arrow.src = "./../../src/img/icon-arrow-dark.svg";
+    company_arrow.src = "./../../src/img/icon-arrow-dark.svg";
+  }
+});
 
