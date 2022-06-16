@@ -33,9 +33,11 @@ dropdown_product.addEventListener('click', (e) =>  {
   product.classList.toggle("aparecer");
   if(company.classList.contains("aparecer")){
     company.classList.toggle("aparecer");
+    company_arrow.classList.toggle("girar");
   }
   if(connect.classList.contains("aparecer")){
     connect.classList.toggle("aparecer");
+    connect_arrow.classList.toggle("girar");
   }
 });
 
@@ -44,9 +46,11 @@ dropdown_company.addEventListener('click', (e) =>  {
   company.classList.toggle("aparecer");
   if(product.classList.contains("aparecer")){
     product.classList.toggle("aparecer");
+    product_arrow.classList.toggle("girar");
   }
   if(connect.classList.contains("aparecer")){
     connect.classList.toggle("aparecer");
+    connect_arrow.classList.toggle("girar");
   }
 });
 
@@ -56,9 +60,11 @@ dropdown_connect.addEventListener('click', (e) =>  {
   connect.classList.toggle("aparecer");
   if(product.classList.contains("aparecer")){
     product.classList.toggle("aparecer");
+    product_arrow.classList.toggle("girar");
   }
   if(company.classList.contains("aparecer")){
     company.classList.toggle("aparecer");
+    company_arrow.classList.toggle("girar");
   }
 });
 
