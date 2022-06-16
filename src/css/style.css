@@ -309,6 +309,40 @@ main{
   margin: 15px 0px;
 }
 
+/*======Footer======*/
+footer{
+  background-color: var(--footer-background);
+  border-top-right-radius: 100px;
+  padding: 45px 0px;
+}
+footer .row{
+  align-items: center;
+}
+footer .row img{
+  width: 100px;
+  margin-bottom: 40px;
+}
+footer .row .list{
+  text-align: center;
+  margin-top: 25px;
+}
+footer .row .list p{
+  margin-bottom: 15px;
+  color: var(--text);
+}
+footer .row .list ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .row .list ul li{
+  margin-bottom: 7px;
+}
+footer  .row .list ul li a{
+  color: var(--footer-text);
+}
+
 
 
 /* Dispositivos médios (tablets com 768px ou mais)*/
@@ -534,7 +568,7 @@ main{
     width: 50%;
   }
   #tool .row img{
-    width: 750px;
+    width: 800px;
     position: relative;
     left: -45%;
   }
@@ -549,5 +583,24 @@ main{
     font-size: 1.7em;
     font-weight: 600;
     margin: 15px 0px;
+  }
+
+  /*======Footer======*/
+  footer{
+    padding: 35px 0px;
+  }
+  footer .row{
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .row .list{
+    margin-top: 0px;
+  }
+  footer .row .list p{
+    margin-bottom: 25px;
+  }
+  footer  .row .list ul li a:hover{
+    text-decoration: underline;
   }
 }
