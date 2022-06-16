@@ -207,8 +207,9 @@ header nav #menu{
 #hero .row #cta-buttons{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
+  gap: 30px;
 }
 #hero .row #cta-buttons .cta-btn{
   padding: 10px 25px;
@@ -219,10 +220,12 @@ header nav #menu{
   background-color: #fff;
   color: var(--cta-text);
   border: 2px solid #fff;
+  transition: all 300ms ease-in-out;
 }
 #hero .row #cta-buttons #learn{
   border: 2px solid #fff;
   color: #fff;
+  transition: all 300ms ease-in-out;
 }
 
 
@@ -255,6 +258,7 @@ header nav #menu{
     align-items: center;
     justify-content: space-between;
     margin-top: 0px;
+    box-shadow: none;
   }
 
   #navegacao ul{
@@ -327,4 +331,32 @@ header nav #menu{
     text-decoration: none;
   }
 
+
+  /*======hero======*/
+  #hero{
+    background: url(./../img/bg-pattern-intro-desktop.svg), linear-gradient(90deg, var(--very-light-red)0%, var(--light-red)100%);
+    background-position-x: -500px;
+    background-position-y: center;
+    background-size: 244%;
+    height: 500px;
+  }
+  #hero .row #cta-text h1{
+    font-size: 4em;
+  }
+  #hero .row #cta-text p{
+    font-size: 1.5em;
+  }
+
+
+  #hero .row #cta-buttons #start:hover{
+    background-color: var(--cta-hover);
+    color: #fff;
+    transition: all 300ms ease-in-out;
+    border-color: var(--cta-hover);
+  }
+  #hero .row #cta-buttons #learn:hover{
+    color: var(--cta-text);
+    background-color: #fff;
+    transition: all 300ms ease-in-out;
+  }
 }
