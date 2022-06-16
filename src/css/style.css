@@ -461,4 +461,40 @@ main{
   #designed #intro .intro-text p{
     margin-bottom: 30px;
   }
+
+  /*======State======*/
+  #state{
+    background-image: url(./../img/bg-pattern-circles.svg), linear-gradient(180deg, var(--very-dark-gray-blue)0%, var(--very-dark-des-blue)100%);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-attachment: fixed;
+    margin-top: 0px;
+    height: 400px;
+  }
+  #state .row{
+    background: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    height: 450px;
+  }
+  #state .row img{
+    top: 0px;
+  }
+  #state .row #state-text{
+    top: -20px;
+    text-align: left;
+    padding: 0px 70px;
+  }
+  #state .row #state-text h2{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  #state .row #state-text p{
+    margin-top: 20px;
+    color: #ffffffab;
+  }
 }
