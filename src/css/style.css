@@ -37,7 +37,6 @@ html, body{
 body{
   font-size: 16px;
   font-family: 'Overpass', 'Ubuntu', sans-serif;
-  background-color: var(--very-light-red);
 }
 
 h1,h2, h3, h4, h5 ,h6{
@@ -65,6 +64,7 @@ header{
   padding-top: 50px;
   padding-left: 25px;
   padding-right: 25px;
+  z-index: 9999;
 }
 
 header nav{
@@ -76,12 +76,13 @@ header nav{
 }
 header nav #logo{
   width: 100px;
+  z-index: 99999;
 }
 header nav #menu{
   background: none;
   margin-left: auto;
   border: none;
-  z-index: 1;
+  z-index: 9999;
   cursor: pointer;
 }
 
@@ -91,14 +92,14 @@ header nav #menu{
   background-color: #fff;
   transform: translateY(-100%);
   opacity: 0;
-  z-index: 0;
+  z-index: 999;
   transition: all 300ms ease-in-out;
   padding: 25px;
+  box-shadow: 0px 3px 4px var(--footer-text);
 }
 .open{
   transform: translateY(0%) !important;
   opacity: 1 !important;
-  z-index: 2;
   transition: all 300ms ease-in-out;
 }
 
@@ -113,7 +114,6 @@ header nav #menu{
   justify-content: center;
   align-items: center;
   color: var(--very-dark-des-blue);
-  z-index: 10;
 }
 #navegacao ul li a img{
   width: 10px;
@@ -166,6 +166,64 @@ header nav #menu{
   display: none;
 }
 
+
+/*======hero======*/
+#hero{
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 250;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background:  url(./../img/bg-pattern-intro-mobile.svg), linear-gradient(90deg, var(--very-light-red)0%, var(--light-red)100%) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    border-radius: 0px 0px 0px 119px;
+}
+#hero .row{
+  align-items: center;
+  
+}
+#hero .row #cta-text{
+  width: 100%;
+  padding: 0px 15px;
+}
+#hero .row #cta-text h1{
+  font-weight: 600;
+  font-size: 1.5em;
+  font-family: 'Overpass';
+  color: #fff;
+  text-align: center;
+}
+#hero .row #cta-text p{
+  color: var(--footer-text);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+#hero .row #cta-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#hero .row #cta-buttons .cta-btn{
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+#hero .row #cta-buttons #start{
+  background-color: #fff;
+  color: var(--cta-text);
+  border: 2px solid #fff;
+}
+#hero .row #cta-buttons #learn{
+  border: 2px solid #fff;
+  color: #fff;
+}
 
 
 

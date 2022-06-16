@@ -18,7 +18,6 @@ let connect_arrow = document.getElementById("connect_arrow");
 let connect = document.getElementById("connect");
 
 
-let min_width = window.matchMedia("(min-width: 768px)")
 
 menu.addEventListener('click', (e) => {
   if(menu_bar.src.includes("src/img/icon-hamburger.svg")){
@@ -66,7 +65,6 @@ dropdown_connect.addEventListener('click', (e) =>  {
 
 
 window.addEventListener('resize',() =>{
-
   if (window.innerWidth >= 768 ) {
     connect_arrow.src = "./../../src/img/icon-arrow-light.svg";
     product_arrow.src = "./../../src/img/icon-arrow-light.svg";
@@ -76,5 +74,5 @@ window.addEventListener('resize',() =>{
     product_arrow.src = "./../../src/img/icon-arrow-dark.svg";
     company_arrow.src = "./../../src/img/icon-arrow-dark.svg";
   }
+  
 });
-
