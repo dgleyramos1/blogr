@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Soluction](https://www.frontendmentor.io/solutions/responsive-landing-page-blogr-EpXzWdv3dg)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-blogr-EpXzWdv3dg)
 - Live Site URL: [SIte demo](https://dgleyramos1.github.io/blogr)
 
 ## My process
